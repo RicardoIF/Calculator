@@ -51,7 +51,7 @@
             this.btnOne = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
             this.btnCero = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.btnSign = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtResult
@@ -303,16 +303,16 @@
             this.btnCero.UseVisualStyleBackColor = true;
             this.btnCero.Click += new System.EventHandler(this.addnumber);
             // 
-            // button22
+            // btnSign
             // 
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button22.Location = new System.Drawing.Point(12, 261);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(45, 45);
-            this.button22.TabIndex = 24;
-            this.button22.Text = "+/-";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.btnSign.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSign.Location = new System.Drawing.Point(12, 261);
+            this.btnSign.Name = "btnSign";
+            this.btnSign.Size = new System.Drawing.Size(45, 45);
+            this.btnSign.TabIndex = 24;
+            this.btnSign.Text = "+/-";
+            this.btnSign.UseVisualStyleBackColor = true;
+            this.btnSign.Click += new System.EventHandler(this.changeSign);
             // 
             // Form1
             // 
@@ -321,7 +321,7 @@
             this.ClientSize = new System.Drawing.Size(303, 315);
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnCero);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.btnSign);
             this.Controls.Add(this.btnthree);
             this.Controls.Add(this.btnTwo);
             this.Controls.Add(this.btnOne);
@@ -377,6 +377,6 @@
         private Button btnOne;
         private Button btnDot;
         private Button btnCero;
-        private Button button22;
+        private Button btnSign;
     }
 }
